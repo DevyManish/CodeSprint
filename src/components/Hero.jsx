@@ -93,8 +93,8 @@ const Button = styled.button`
 `;
 
 const Devfolio = styled.img`
-  height: 3rem; /* or 72px */
-  width: 3rem; /* or 72px */
+  height: 3rem;
+  width: 3rem;
 `;
 const Right = styled.div`
   flex: 3;

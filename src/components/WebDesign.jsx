@@ -8,6 +8,7 @@ const Desc = styled.div`
   width: 200px;
   height: 70px;
   padding: 20px;
+  align-items: center;
   background-color: white;
   border-radius: 10px;
   position: absolute;
@@ -35,8 +36,7 @@ const WebDesign = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Select a problem statement from the Smart India Hackathon 2024. Showcase your skills by developing innovative solutions using your favorite technologies.
       </Desc>
     </>
   );
