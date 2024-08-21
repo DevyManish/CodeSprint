@@ -8,6 +8,8 @@ const Desc = styled.div`
   width: 200px;
   height: 70px;
   padding: 20px;
+  padding-bottom: 2rem; 
+  text-align: justify; 
   align-items: center;
   background-color: white;
   border-radius: 10px;
