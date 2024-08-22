@@ -61,7 +61,7 @@ const Icon = styled.img`
 const Button = styled.button`
   width: 110px;
   padding: 10px;
-  background-color: #3770FF;
+  background-color: #3770ff;
   font-size: 1rem;
   color: white;
   border: none;
@@ -70,6 +70,10 @@ const Button = styled.button`
 `;
 
 const Navbar = () => {
+  const handleButtonClick = () => {
+     window.open("https://www.notion.so/JISU-CodeSprint-d808eae891854ab7a5657571cfc83858");
+  };
+
   return (
     <Section>
       <Container>
@@ -83,9 +87,8 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
-          <Button>Learn More</Button>
+          <Button onClick={handleButtonClick}>Learn More</Button>
         </Icons>
       </Container>
     </Section>
