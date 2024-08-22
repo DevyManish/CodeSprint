@@ -72,6 +72,11 @@ const Right = styled.div`
     display: none;
   }
 `;
+const Img = styled.img`
+  width: 800px;
+  height: 600px;
+
+`;
 
 const Contact = () => {
   const ref = useRef();
@@ -118,6 +123,7 @@ const Contact = () => {
         </Left>
         <Right>
           {/* <Map /> */}
+          <Img src="./img/jisu.png"/>
         </Right>
       </Container>
     </Section>
