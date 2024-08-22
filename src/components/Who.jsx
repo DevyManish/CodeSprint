@@ -107,12 +107,12 @@ const Who = () => {
           <Title>Get ready to innovate!</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Why late, Hurry Now</Subtitle>
           </WhatWeDo>
           <Desc>
-          Register, form your team, choose a problem and proceed to the SIH.
+          Unleash your potential at CodeSprint 1.0, JIS University's official gateway to the Smart India Hackathon 2024. Form your team, tackle real-world challenges, and earn the chance to represent our university on the national stage. Innovate, collaborate, and take the first step towards making a difference!
           </Desc>
-          <Button>See our works</Button>
+          <Button>Get Mentor</Button>
         </Right>
       </Container>
     </Section>
