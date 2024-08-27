@@ -80,21 +80,21 @@ const Desc = styled.p`
 const Button = styled.button`
   display: flex;
   align-items: center;
-  justify-items: center;
-  background-color: #3770FF;
+  justify-content: center;
+  background-color: #da4ea2;
   color: white;
-  font-weight: 500;
-  font-size: 1.5rem;
-  width: 280px;
-  padding: 10px;
-  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 200px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 `;
 
-const Devfolio = styled.img`
-  height: 3rem;
+const Hack2Skill = styled.img`
+  height:3rem;
   width: 3rem;
 `;
 const Right = styled.div`
@@ -143,10 +143,10 @@ const Hero = () => {
             {/* <Subtitle>What we Do</Subtitle> */}
           </WhatWeDo>
           <Desc>
-          Join JIS University's Internal Hackathon and take your first step towards competing in Asia’s biggest event, the Smart India Hackathon 2024!
+            Join JIS University's Internal Hackathon and take your first step towards competing in Asia’s biggest event, the Smart India Hackathon 2024!
           </Desc>
-          <Button>Apply with Devfolio
-            <Devfolio size="" src="/img/devfolio.png" />
+          <Button>Apply with Hack2Skill
+            <Hack2Skill src="img/H2S.png" />
           </Button>
         </Left>
         <Right>
