@@ -45,16 +45,23 @@ const JudgesContainer = styled.div`
 `;
 
 const JudgeCard = styled.div`
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
   background-color: #1c1c1c;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; 
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 90%; 
+    align-self: center; 
   }
 `;
 
