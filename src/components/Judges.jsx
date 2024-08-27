@@ -86,6 +86,8 @@ const JudgeDescription = styled.p`
   color: #cccccc;
   line-height: 1.4;
   margin-bottom: 16px;
+  text-align: justify;
+  text-justify: inter-word;
 `;
 
 const JudgeActions = styled.div`
@@ -107,40 +109,22 @@ const JudgeButton = styled.button`
 
 const judges = [
     {
-        name: "Dr. Jane Smith",
-        title: "AI Research Scientist",
-        image: "/img/.jpg",
-        description: "Leading expert in AI with over 15 years of experience in machine learning and neural networks."
+        name: "Mrs. Debmitra Ghosh",
+        title: "Assistant Professor ",
+        image: "/img/j2.jpg",
+        description: "Mrs. Debmitra Ghosh is an Assistant Professor in the Department of CSE at JIS University.. Specializing in AI/ML, she focuses on research and teaching in advanced algorithms and data-driven technologies."
     },
     {
-        name: "John Doe",
-        title: "Blockchain Entrepreneur",
-        image: "/img/judge2.jpg",
-        description: "Founder of a successful blockchain startup, instrumental in developing decentralized finance solutions."
+        name: "Dr. Bidisha Bhabani",
+        title: "Assistant Professor",
+        image: "/img/j1.jpg",
+        description: "Dr. Bidisha Bhabani is an Assistant Professor in the Department of CSE at JIS University, with a specialization in AI and ML. Her research and teaching center around advanced algorithms and data-driven techniques."
     },
     {
-        name: "Dr. Emily Chen",
-        title: "MedTech Innovator",
-        image: "/img/judge3.jpg",
-        description: "Pioneered breakthrough medical devices and holds multiple patents in biomedical engineering."
-    },
-    {
-        name: "Michael Johnson",
-        title: "AgriTech Specialist",
-        image: "/img/judge4.jpg",
-        description: "Dedicated to developing sustainable agricultural technologies, focusing on precision farming and IoT."
-    },
-    {
-        name: "Sarah Brown",
-        title: "Robotics Engineer",
-        image: "/img/judge5.jpg",
-        description: "Renowned robotics engineer working on cutting-edge projects in industrial automation and consumer robotics."
-    },
-    {
-        name: "Dr. Robert Lee",
-        title: "Clean Energy Expert",
-        image: "/img/judge6.jpg",
-        description: "Leading researcher in renewable energy technologies, advisor to governments on sustainable energy policies."
+        name: "Dr. Sayantan Ray",
+        title: "Tech Innovator",
+        image: "/img/j3.png",
+        description: "Tech Innovator with a track record of pioneering cutting-edge medical devices and holding several patents in biomedical engineering. He has developed innovative solutions that enhance patient care and improve medical outcomes."
     }
 ];
 
