@@ -30,6 +30,7 @@ const JudgesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  align-items: center;
   max-width: 1200px;
   width: 100%;
   padding: 0 20px;
@@ -131,7 +132,7 @@ const judges = [
     name: "Prof. (Dr.) Sandip Roy",
     title: "HOD, CSE",
     image: "/img/j3.jpeg",
-    description: "Dr. Sandip Roy, Head of Computer Science & Engineering at JIS University, Kolkata, was awarded Best Young HOD 2021 and recognized for teaching excellence, with research interests in Data Science, IoT, Cloud Computing, Green Computing, and Smart Technologies.",
+    description: "Dr. Sandip Roy, Head of CSE Dept. at JIS University, Kolkata, is recognized for teaching excellence, with research interests in Data Science, IoT, Cloud Computing, Green Computing, and Smart Technologies.",
     link: "https://www.linkedin.com/in/prof-sandip-roy-05808425/"
   }
 ];
