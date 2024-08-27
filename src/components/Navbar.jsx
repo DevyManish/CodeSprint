@@ -61,18 +61,25 @@ const Icon = styled.img`
 const Button = styled.button`
   width: 110px;
   padding: 10px;
-  background-color: #3770ff;
+  background-color: #da4ea2;
   font-size: 1rem;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 `;
 
 const Navbar = () => {
   const handleButtonClick = () => {
-     window.open("https://www.notion.so/JISU-CodeSprint-d808eae891854ab7a5657571cfc83858");
+    window.open("https://www.notion.so/JISU-CodeSprint-d808eae891854ab7a5657571cfc83858");
   };
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   return (
     <Section>
@@ -80,10 +87,10 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/favicon.png" />
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>Themes</ListItem>
-            <ListItem>Judges</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem onClick={() => scrollToSection('home')}>Home</ListItem>
+            <ListItem onClick={() => scrollToSection('themes')}>Themes</ListItem>
+            <ListItem onClick={() => scrollToSection('judges')}>Judges</ListItem>
+            <ListItem onClick={() => scrollToSection('contact')}>Contact</ListItem>
           </List>
         </Links>
         <Icons>
