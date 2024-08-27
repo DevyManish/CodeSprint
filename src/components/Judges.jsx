@@ -128,7 +128,7 @@ const judges = [
     link: "https://www.linkedin.com/in/dr-bidisha-bhabani-ph-d-9765a221/"
   },
   {
-    name: "Dr. Sandip Roy",
+    name: "Prof. (Dr.) Sandip Roy",
     title: "HOD, CSE",
     image: "/img/j3.jpeg",
     description: "Dr. Sandip Roy, Head of Computer Science & Engineering at JIS University, Kolkata, was awarded Best Young HOD 2021 and recognized for teaching excellence, with research interests in Data Science, IoT, Cloud Computing, Green Computing, and Smart Technologies.",
