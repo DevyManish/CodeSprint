@@ -95,7 +95,7 @@ const JudgeActions = styled.div`
   justify-content: flex-end;
 `;
 
-const JudgeButton = styled.button`
+const JudgeButton = styled.a`
   background-color: #da4ea2;
   color: white;
   font-weight: 600;
@@ -104,51 +104,61 @@ const JudgeButton = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c2438f;
+  }
 `;
 
 const judges = [
-    {
-        name: "Mrs. Debmitra Ghosh",
-        title: "Assistant Professor ",
-        image: "/img/j2.jpg",
-        description: "Mrs. Debmitra Ghosh is an Assistant Professor in the Department of CSE at JIS University.. Specializing in AI/ML, she focuses on research and teaching in advanced algorithms and data-driven technologies."
-    },
-    {
-        name: "Dr. Bidisha Bhabani",
-        title: "Assistant Professor",
-        image: "/img/j1.jpg",
-        description: "Dr. Bidisha Bhabani is an Assistant Professor in the Department of CSE at JIS University, with a specialization in AI and ML. Her research and teaching center around advanced algorithms and data-driven techniques."
-    },
-    {
-        name: "Dr. Sayantan Ray",
-        title: "Tech Innovator",
-        image: "/img/j3.png",
-        description: "Tech Innovator with a track record of pioneering cutting-edge medical devices and holding several patents in biomedical engineering. He has developed innovative solutions that enhance patient care and improve medical outcomes."
-    }
+  {
+    name: "Mrs. Debmitra Ghosh",
+    title: "Assistant Professor",
+    image: "/img/j2.jpg",
+    description: "Mrs. Debmitra Ghosh is an Assistant Professor in the Department of CSE at JIS University.. Specializing in AI/ML, she focuses on research and teaching in advanced algorithms and data-driven technologies.",
+    link: "https://www.linkedin.com/in/debmitra-ghosh-12694918/"
+  },
+  {
+    name: "Dr. Bidisha Bhabani",
+    title: "Assistant Professor",
+    image: "/img/j1.jpg",
+    description: "Dr. Bidisha Bhabani is an Assistant Professor in the Department of CSE at JIS University, with a specialization in AI and ML. Her research and teaching center around advanced algorithms and data-driven techniques.",
+    link: "https://www.linkedin.com/in/dr-bidisha-bhabani-ph-d-9765a221/"
+  },
+  {
+    name: "Dr. Sayantan Ray",
+    title: "Tech Innovator",
+    image: "/img/j3.png",
+    description: "Tech Innovator with a track record of pioneering cutting-edge medical devices and holding several patents in biomedical engineering. He has developed innovative solutions that enhance patient care and improve medical outcomes.",
+    link: "https://github.com/soim"
+  }
 ];
 
 const Judges = () => {
-    return (
-        <JudgesSection>
-            <JudgesHeading>Our Esteemed Judges</JudgesHeading>
-            <JudgesContainer>
-                {judges.map((judge, index) => (
-                    <JudgeCard key={index}>
-                        <JudgeImage src={judge.image} alt={judge.name} />
-                        <JudgeInfo>
-                            <JudgeName>{judge.name}</JudgeName>
-                            <JudgeTitle>{judge.title}</JudgeTitle>
-                            <JudgeDescription>{judge.description}</JudgeDescription>
-                            <JudgeActions>
-                                <JudgeButton>View Profile</JudgeButton>
-                            </JudgeActions>
-                        </JudgeInfo>
-                    </JudgeCard>
-                ))}
-            </JudgesContainer>
-        </JudgesSection>
-    );
+  return (
+    <JudgesSection>
+      <JudgesHeading>Our Esteemed Judges</JudgesHeading>
+      <JudgesContainer>
+        {judges.map((judge, index) => (
+          <JudgeCard key={index}>
+            <JudgeImage src={judge.image} alt={judge.name} />
+            <JudgeInfo>
+              <JudgeName>{judge.name}</JudgeName>
+              <JudgeTitle>{judge.title}</JudgeTitle>
+              <JudgeDescription>{judge.description}</JudgeDescription>
+              <JudgeActions>
+                <JudgeButton href={judge.link} target="_blank" rel="noopener noreferrer">
+                  View Profile
+                </JudgeButton>
+              </JudgeActions>
+            </JudgeInfo>
+          </JudgeCard>
+        ))}
+      </JudgesContainer>
+    </JudgesSection>
+  );
 };
 
 export default Judges;
