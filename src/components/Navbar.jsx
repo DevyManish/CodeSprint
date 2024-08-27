@@ -61,9 +61,9 @@ const Icon = styled.img`
 const Button = styled.button`
   width: 110px;
   padding: 10px;
-  background-color: #da4ea2;
+  background-color: #ffffff;
   font-size: 1rem;
-  color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -72,7 +72,7 @@ const Button = styled.button`
 
 const Navbar = () => {
   const handleButtonClick = () => {
-    window.open("https://www.notion.so/JISU-CodeSprint-d808eae891854ab7a5657571cfc83858");
+    window.open("https://intelligent-war-081.notion.site/CodeSprint-1-0-Guide-741af42c5f5a4a0b9888a60eeeaf70a6#8cf7774d3b55420dbf4914358c364f9e");
   };
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
