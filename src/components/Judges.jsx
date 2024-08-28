@@ -5,6 +5,7 @@ const JudgesSection = styled.div`
   min-height: 100vh;
   scroll-snap-align: start;
   display: flex;
+  border-radius: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,7 @@ const JudgesSection = styled.div`
 const JudgesHeading = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff;
+  color:#EDE7F6
   margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -30,10 +31,13 @@ const JudgesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  border-radius: 10px;
   align-items: center;
   max-width: 1200px;
   width: 100%;
   padding: 0 20px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   @media only screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -47,7 +51,8 @@ const JudgesContainer = styled.div`
 const JudgeCard = styled.div`
   max-width: 280px;
   width: 100%;
-  background-color: #1c1c1c;
+  background: linear-gradient(135deg, #6A1B9A, #4A148C);
+  color:#EDE7F6;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -91,7 +96,7 @@ const JudgeTitle = styled.h4`
 
 const JudgeDescription = styled.p`
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #EDE7F6;
   line-height: 1.4;
   margin-bottom: 16px;
   text-align: justify;
@@ -104,7 +109,7 @@ const JudgeActions = styled.div`
 `;
 
 const JudgeButton = styled.a`
-  background-color: #da4ea2;
+  background: linear-gradient(135deg, #F06292, #D81B60);
   color: white;
   font-weight: 600;
   font-size: 0.9rem;
