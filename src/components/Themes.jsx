@@ -154,7 +154,7 @@ const themes = [
   {
     bgImage: "/img/Miscellaneous.avif",
     title: "Miscellaneous",
-    description: "Innovative ideas across various domains"
+    description: "Rest SIH themes are included in this segment."
   }
 ];
 
