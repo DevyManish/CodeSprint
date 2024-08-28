@@ -65,18 +65,31 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
+  line-height: 30px;
   color: lightgray;
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
   width: 120px;
-  padding: 10px;
+  height: 40px;
+  background: linear-gradient(135deg, #F06292, #D81B60);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c2438f;
+  }
+`;
+
+const Link = styled.a`
+  text-decoration: none; 
 `;
 
 const Text = styled.div`
@@ -107,12 +120,14 @@ const Who = () => {
           <Title>Get ready to innovate!</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Why late, Hurry Now</Subtitle>
+            <Subtitle>Unleash Your Inner Ninja and Hack Your Way to SIH 2024!</Subtitle>
           </WhatWeDo>
           <Desc>
-          Unleash your potential at CodeSprint 1.0, JIS University's official gateway to the Smart India Hackathon 2024. Form your team, tackle real-world challenges, and earn the chance to represent our university on the national stage. Innovate, collaborate, and take the first step towards making a difference!
+            Form your team, tackle real-world challenges, and earn the chance to represent our university on the national stage. Innovate, collaborate, and take the first step towards making a difference!
           </Desc>
-          <Button>Get Mentor</Button>
+          <Link href="https://www.instagram.com/codesprintjisu/">
+            <Button>Follow Us</Button>
+          </Link>
         </Right>
       </Container>
     </Section>

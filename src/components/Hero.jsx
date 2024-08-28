@@ -81,7 +81,7 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fffff;
+  background-color: #ffffff;
   color: black;
   font-family: Verdana, sans-serif;
   font-weight: 900;
@@ -92,6 +92,9 @@ const Button = styled.button`
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+`;
+const Link = styled.a`
+  text-decoration: none; 
 `;
 
 const Hack2Skill = styled.img`
@@ -149,9 +152,11 @@ const Hero = () => {
           <Desc>
             Join JIS University's Internal Hackathon and take your first step towards competing in Asia’s biggest event, the Smart India Hackathon 2024!
           </Desc>
-          <Button>Apply with 
-            <Hack2Skill src="img/H2S.svg" />
-          </Button>
+          <Link href="https://hack2skill.com/hack/codesprint/" target="blank">
+            <Button>Apply with 
+              <Hack2Skill src="img/H2S.svg" />
+            </Button>
+          </Link>
         </Left>
         <Right>
           <Canvas>
