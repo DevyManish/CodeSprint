@@ -29,7 +29,7 @@ const JudgesHeading = styled.h2`
 
 const JudgesContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   border-radius: 10px;
   align-items: center;
@@ -99,8 +99,6 @@ const JudgeDescription = styled.p`
   color: #EDE7F6;
   line-height: 1.4;
   margin-bottom: 16px;
-  text-align: justify;
-  text-justify: inter-word;
 `;
 
 const JudgeActions = styled.div`
@@ -131,21 +129,24 @@ const judges = [
     title: "Assistant Professor",
     image: "/img/j2.jpg",
     description: "Mrs. Debmitra Ghosh is an Assistant Professor in the Department of CSE at JIS University.. Specializing in AI/ML, she focuses on research and teaching in advanced algorithms and data-driven technologies.",
-    link: "https://www.linkedin.com/in/debmitra-ghosh-12694918/"
   },
   {
-    name: "Dr. Bidisha Bhabani",
+    name: "Dr. Radhakrishna Jana",
     title: "Assistant Professor",
-    image: "/img/j1.jpg",
-    description: "Dr. Bidisha Bhabani is an Assistant Professor in the Department of CSE at JIS University, with a specialization in AI and ML. Her research and teaching center around advanced algorithms and data-driven techniques.",
-    link: "https://www.linkedin.com/in/dr-bidisha-bhabani-ph-d-9765a221/"
+    image: "/img/j4.jpg",
+    description: "Dr. Radhakrishna Jana is an Assistant Professor in the Department of CSE at JIS University, with a specialization in AI and ML. His research and teaching center around advanced algorithms and data-driven techniques.",
   },
   {
-    name: "Prof. (Dr.) Sandip Roy",
-    title: "HOD, CSE",
-    image: "/img/j3.jpeg",
-    description: "Dr. Sandip Roy, Head of CSE Dept. at JIS University, Kolkata, is recognized for teaching excellence, with research interests in Data Science, IoT, Cloud Computing, Green Computing, and Smart Technologies.",
-    link: "https://www.linkedin.com/in/prof-sandip-roy-05808425/"
+    name: "Dr. Tanaya Das",
+    title: "Assistant Professor",
+    image: "/img/j5.jpg",
+    description: "Dr. Tanaya Das is an Assistant Professor int the Department of CSE at JIS University, Kolkata, Specializing in Data Analytics, she focuses on research and teaching in advanced algorithms.",
+  },
+  {
+    name: "Dr. Sonali Bhowmik",
+    title: "Assistant Professor",
+    image: "/img/j6.jpg",
+    description: "Dr. Sonali Bhowmik is an Assistant Professor in the Department of CSE at JIS University, Kolkata,she has contributed to several innovative projects in IoT and Embedded Systems.",
   }
 ];
 
@@ -162,9 +163,6 @@ const Judges = () => {
               <JudgeTitle>{judge.title}</JudgeTitle>
               <JudgeDescription>{judge.description}</JudgeDescription>
               <JudgeActions>
-                <JudgeButton href={judge.link} target="_blank" rel="">
-                  View Profile
-                </JudgeButton>
               </JudgeActions>
             </JudgeInfo>
           </JudgeCard>
